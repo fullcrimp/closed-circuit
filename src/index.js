@@ -37,8 +37,7 @@ function findFirstNode (matrix) {
 // in case of a massive matrix it is faster to
 // iterate through linked nodes
 function getLinkedNodeList (matrix, posOrigin) {
-  let sum = 0,
-    linkedNodeList = []
+  let linkedNodeList = []
 
   // looking through all adjacent nodes
   for (let i = -1; i <= 1; i++) {
@@ -60,7 +59,7 @@ function isInList (nodeList, node) {
 
 
 function existPos (matrix, pos) {
-  return pos[0] >= 0 && pos[1] >= 0 && pos[0] < matrix.length - 1 && pos[1] < matrix[0].length - 1
+  return pos[0] >= 0 && pos[1] >= 0 && pos[0] < matrix.length && pos[1] < matrix[0].length
 }
 
 
